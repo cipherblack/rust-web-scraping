@@ -1,0 +1,11 @@
+[package]
+name = "web_crawler"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }  # برای ارسال درخواست HTTP
+scraper = "0.12"  # برای استخراج داده‌ها از HTML
+tokio = { version = "1", features = ["full"] }  # برای asynchronous
+serde = { version = "1.0", features = ["derive"] }  # برای کار با داده‌های JSON
+dotenv = "0.15"  # برای بارگذاری متغیرهای محیطی
